@@ -1,0 +1,39 @@
+@url=http://localhost:3001/api
+@json=Content-Type: application/json
+
+### 文章
+get {{url}}/articles
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlM2E4YTk1YjNhM2VmM2JmODI3MzYwNCIsImlhdCI6MTU4MTMxMzczM30.NOpWKOBmAwShbdkWHflszAM8ZtF7jlxIDytluadluTw
+
+
+### 注册
+post {{url}}/register
+{{json}}
+
+{
+    "username": "walkingp2",
+    "password": "hongjian1987"
+}
+
+### 登录
+post {{url}}/login
+{{json}}
+
+{
+    "username": "walkingp",
+    "password": "hongjian1987"
+}
+
+
+### 分类
+get {{url}}/rest/cates
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlM2E4YTk1YjNhM2VmM2JmODI3MzYwNCIsImlhdCI6MTU4MTMxMzczM30.NOpWKOBmAwShbdkWHflszAM8ZtF7jlxIDytluadluTw
+
+
+### 用户列表
+get {{url}}/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlM2E4YTk1YjNhM2VmM2JmODI3MzYwNCIsImlhdCI6MTU4MTMxMzczM30.NOpWKOBmAwShbdkWHflszAM8ZtF7jlxIDytluadluTw
+
+### 个人信息
+get {{url}}/profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlM2E4YTk1YjNhM2VmM2JmODI3MzYwNCIsImlhdCI6MTU4MTMxMzczM30.NOpWKOBmAwShbdkWHflszAM8ZtF7jlxIDytluadluTw
