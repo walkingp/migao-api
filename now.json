@@ -1,0 +1,51 @@
+{
+    "version": 2,
+    "builds": [{ "src": "index.js", "use": "@now/node-server" }],
+    "routes": [
+        {
+          "src": "/api/users",
+          "dest": "/index.js",
+          "methods": ["GET"]
+        },
+        {
+          "src": "/api/users",
+          "dest": "/index.js",
+          "methods": ["POST"]
+        },
+        {
+            "src": "/api/articles",
+            "dest": "/index.js",
+            "methods": ["GET"]
+          },
+          {
+            "src": "/api/articles",
+            "dest": "/index.js",
+            "methods": ["POST"]
+          },          
+        {
+            "src": "/api/articles",
+            "dest": "/index.js",
+            "methods": ["GET"]
+          },
+          {
+            "src": "/api/articles",
+            "dest": "/index.js",
+            "methods": ["POST"]
+          },
+          {
+            "src": "/api/rest/:resource",
+            "dest": "/index.js",
+            "methods": ["GET"]
+          },
+          {
+            "src": "/api/rest/:resource",
+            "dest": "/index.js",
+            "methods": ["POST"]
+          },
+          {
+            "src": "/api/upload",
+            "dest": "/index.js",
+            "methods": ["POST"]
+          }
+      ]
+}
