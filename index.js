@@ -28,6 +28,7 @@ const classify = require("./middleware/classify");
 
 app.use("/api", user);
 app.use("/api/articles", auth, article);
+app.use("/api/frontend/articles", article);
 app.use("/api/rest/:resource", classify, auth, rest);
 
 const multer = require("multer");

@@ -33,12 +33,17 @@
             "methods": ["POST"]
           },
           {
-            "src": "/api/rest/:resource",
+            "src": "/api/frontend/articles",
             "dest": "/index.js",
             "methods": ["GET"]
           },
           {
-            "src": "/api/rest/:resource",
+            "src": "/api/rest/article",
+            "dest": "/index.js",
+            "methods": ["GET"]
+          },
+          {
+            "src": "/api/rest/article",
             "dest": "/index.js",
             "methods": ["POST"]
           },
